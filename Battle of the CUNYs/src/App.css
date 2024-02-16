@@ -1,4 +1,113 @@
-#root {
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Monda:wght@400;700&display=swap")
+html {
+    box-sizing: border-box;
+    font-size: var(--standard-font-size);
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    width: 100%;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* animation: fadeIn 750ms linear forwards; */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}
+
+img {
+    pointer-events: none;
+}
+body {
+    font-weight: 400;
+    line-height: 1.75;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    margin: 0;
+    font-family: var(--body-font);
+    scroll-behavior: smooth;
+}
+:root {
+    /* fonts */
+    --body-font: "Inika", serif;
+    --second-font: "Monda", sans-serif;
+
+    /* colors */
+    --primary: rgba(2, 35, 211, 1);
+    --secondary: rgba(107, 160, 245, 1);
+    --tertiary: rgba(212, 233, 239, 1);
+    --quaternary: rgba(80, 222, 253, 1);
+    --white: #fff;
+    --off-white: #f0f0f0;
+    --light-text: rgba(2, 35, 211, 0.4);
+    --shaded-text: rgba(114, 113, 113, 1);
+    --dark-text: #24201e;
+    --bg-primary: #272727;
+    --bg-secondary: rgb(52, 52, 52);
+    --alt-linear: #7926ff;
+    --info-select: #ffb6c1;
+    --login-shadow: rgba(0, 0, 0, 0.25);
+    --search-hover: rgb(112, 53, 53);
+    --search-dark: rgb(29, 29, 29);
+    --search-text: rgb(219, 219, 219);
+    --search-bg: rgb(68, 68, 68);
+    --bg-rank: #87000b;
+    --rank1: rgb(255, 183, 0);
+    --rank2: rgb(0, 195, 255);
+    --rank3: #04ff9f;
+
+    /* font weight */
+    --fw-light: 300;
+    --fw-reg: 400;
+    --fw-med: 500;
+    --fw-semi: 600;
+    --fw-bold: 700;
+
+    /* font sizes */
+    --standard-font-size: 62.5%;
+    --h1: 5.653rem;
+    --h2: 3.998rem;
+    --h3: 2.827rem;
+    --h4: 1.999rem;
+    --h5: 1.6rem;
+    --h6: 1.414rem;
+    --h7: 1.2rem;
+    --h8: 1rem;
+    --smallText: 0.8rem;
+}
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -16,27 +125,19 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
+} */
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
