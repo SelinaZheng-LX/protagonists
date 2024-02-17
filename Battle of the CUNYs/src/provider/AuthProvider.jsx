@@ -1,12 +1,12 @@
 import React, { createContext, useContext, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-const AuthContext = useContext(null);
+const AuthContext = createContext(null);
 
 export const AuthProvider = ({children}) => {
     const navigate = useNavigate();
     const location = useLocation();
-    const redirectPath = location.state?.path || "/profile";
+    const redirectPath = location.state?.path || "/home";
     const [user, setUser] = useState({
         username: "",
     });
@@ -21,5 +21,5 @@ export const AuthProvider = ({children}) => {
 }
 
 export const useAuth = () => {
-    return useContext(AuthContext)
+    return useContext(AuthContext);
 }
