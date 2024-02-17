@@ -32,6 +32,12 @@ export default function Home() {
                         mascot stats
                     </button>
                 </div>
+                <div className="navbar">
+                    <div className="row-container">
+                        <div className="test">test</div>
+                        <div className="test">test</div>
+                    </div>
+                </div>
             </section>
         </>
     );
