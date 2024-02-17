@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAuth } from "../provider/AuthProvider.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function Signup() {
     const [user, setUser] = useState("");
     const { login } = useAuth();
     const navigate = useNavigate();
@@ -17,11 +17,20 @@ export default function Login() {
         <>
             <section className="login">
                 <div className="flex-container">
-                    <h1 className="title">Login Account</h1>
-                    <label className="sub-text">Login Account</label>
+                    <h1 className="title">Sign Up</h1>
+                    <label className="sub-text">Email Address</label>
                     <input
                         className="input"
-                        placeholder="Enter your email"
+                        placeholder="Enter your email address"
+                        type="text"
+                        onChange={(e) => {
+                            setUser(e.target.value);
+                        }}
+                    />
+                    <label className="sub-text">Re-enter Email Address</label>
+                    <input
+                        className="input"
+                        placeholder="Enter your email address"
                         type="text"
                         onChange={(e) => {
                             setUser(e.target.value);
@@ -44,7 +53,7 @@ export default function Login() {
                         Log In
                     </button>
                     <p className="sub-caption url">
-                        <a href="/signup">Don’t have an account? Sign up</a>
+                        <a href="Signup.jsx">Don’t have an account? Sign up</a>
                     </p>
                 </div>
             </section>
