@@ -238,7 +238,6 @@ input {
     justify-content: space-between;
     align-items: center;
     margin-top: 10%;
-    width: 70%;
 }
 .h1 {
     color: var(--white);
@@ -272,7 +271,7 @@ input {
     color: var(--primary-light);
     font-size: var(--h7);
     font-weight: var(--fw-bold);
-    float: left;
+    width: 60%;
 }
 .amount-fed {
     width: 80%;
@@ -286,10 +285,53 @@ input {
     border-radius: 5px;
     margin-bottom: 2rem;
 }
-.placeholder-progress {
+
+#myProgress {
+    width: 90%;
+    background-color: var(--tertiary);
+    border-radius: 10px;
+    position: relative;
+    bottom: 9.5vh;
+}
+
+#myBar {
     background-color: var(--quaternary);
     border-radius: 10px;
-    width: 70%;
+    width: 3%;
     height: 1rem;
     display: block;
+}
+.image {
+    width: 10rem;
+    /* bottom: 30vh; */
+    z-index: 20;
+    margin-bottom: 4rem;
+}
+.absolute {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-right: 40vw;
+}
+.col-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line-1 {
+    width: 50vw;
+    height: 1px;
+    background: black;
+}
+.line-2 {
+    width: 50vw;
+    height: 1px;
+    background: var(--white);
 }
