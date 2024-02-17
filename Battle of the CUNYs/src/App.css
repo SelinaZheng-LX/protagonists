@@ -335,3 +335,33 @@ input {
     height: 1px;
     background: var(--white);
 }
+/* navbar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-nav a {
+    float: left;
+    display: block;
+    color: var(--dark-text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.bottom-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.bottom-nav a.active {
+    background-color: var(--light-text);
+    color: white;
+}

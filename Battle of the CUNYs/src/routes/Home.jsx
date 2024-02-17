@@ -50,14 +50,18 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <button onClick={() => navigate("/profile")}>
+                    {/* <button onClick={() => navigate("/profile")}>
                         mascot stats
-                    </button>
-                </div>
-                <div className="navbar">
-                    <div className="row-container">
-                        <div className="test">test</div>
-                        <div className="test">test</div>
+                    </button> */}
+                    <div className="bottom-nav" id="bottomNav">
+                        <a
+                            onClick={() => navigate("/profile")}
+                            className="active"
+                        >
+                            Home
+                        </a>
+                        <a onClick={() => navigate("/profile")}>About</a>
+                        <a onClick={() => navigate("/profile")}>Contact</a>
                     </div>
                 </div>
             </section>
