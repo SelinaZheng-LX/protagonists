@@ -1,0 +1,50 @@
+@import url(../App.css);
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Monda:wght@400;700&display=swap");
+.mascotScreen {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--body-font);
+    background-image: url("../assets/purple-bg.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.data-container {
+    background-color: var(--white);
+    width: 80vw;
+    height: 70vh;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.mascot-show {
+    width: 10rem;
+    z-index: 2;
+    bottom: 65vh;
+    position: fixed;
+    filter: drop-shadow(0 0 0.75rem var(--primary));
+}
+#xpProgress {
+    width: 90%;
+    background-color: var(--quaternary);
+    border-radius: 10px;
+    bottom: 9.5vh;
+}
+
+#xpBar {
+    background: linear-gradient(var(--quaternary), var(--alt-linear));
+    /* background-color: var(--quaternary); */
+    border-radius: 10px;
+    width: 30%;
+    height: 1rem;
+    display: block;
+}
+.line {
+    width: 70vw;
+    height: 1px;
+    background: var(--secondary);
+}
