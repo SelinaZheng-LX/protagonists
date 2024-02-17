@@ -1,0 +1,188 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#caption {
+    position: absolute;
+    font-size: 30sp;
+    font-weight: 300;
+    color: transparent;
+    background-image: linear-gradient(to right, #553c9a, #ee4b2b, #00c2cb, #ff7f50, #553c9a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    background-position: -200%;
+    animation: animated-gradient 6s infinite alternate-reverse;
+}
+
+@keyframes animated-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+#scanning-overlays {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 2;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    #scanning-overlays .inner {
+        width: 50vh;
+        height: 50vh;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #scanning-overlays .inner {
+        width: 80vw;
+        height: 80vw;
+    }
+}
+
+#scanning-overlays .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    background:
+        linear-gradient(to right, white 10px, transparent 10px) 0 0,
+        linear-gradient(to right, white 10px, transparent 10px) 0 100%,
+        linear-gradient(to left, white 10px, transparent 10px) 100% 0,
+        linear-gradient(to left, white 10px, transparent 10px) 100% 100%,
+        linear-gradient(to bottom, white 10px, transparent 10px) 0 0,
+        linear-gradient(to bottom, white 10px, transparent 10px) 100% 0,
+        linear-gradient(to top, white 10px, transparent 10px) 0 100%,
+        linear-gradient(to top, white 10px, transparent 10px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+
+#scanning-overlays.hidden {
+    display: none;
+}
+
+#scanning-overlays img {
+    opacity: 0.6;
+    width: 90%;
+    align-self: center;
+}
+
+#scanning-overlays .inner .scanline {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: white;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0%,
+    100% {
+        top: 0%
+    }
+    50% {
+        top: calc(100% - 10px)
+    }
+}
+
+
+
+
+.hearts.active {
+    width: 5%;
+    min-width: 1000px;
+    height: 25%;
+    min-height: 250px;
+    bottom: 10%;
+    left: 20%;
+    position: absolute;
+    z-index: 10;
+   }
+   
+   .heart.active {
+    position: absolute;
+    height: 20%;
+    min-height: 25px;
+    width: 20%;
+    min-width: 25px;
+    background-color: red;
+    -webkit-mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>');
+            mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>');
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: bottom;
+            mask-position: bottom;
+     opacity: 0;
+     animation: floating-heart 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+   }
+   
+   @keyframes floating-heart {
+     0% {
+       opacity: 0;
+       bottom: 0%;
+       left: 0%;
+     }
+     10% {
+       opacity: 1;
+       bottom: 20%;
+       left: 70%;
+     }
+     20% {
+       bottom: 40%;
+       left: 10%;
+     }
+     30% {
+       bottom: 60%;
+       left: 50%;
+     }
+     40% {
+       opacity: 1;
+       bottom: 80%;
+       left: 5%;
+     }
+     48% {
+       opacity: 0;
+       bottom: 100%;
+       left: 60%;
+     }
+     100% {
+       opacity: 0;
+       bottom: 100%;
+       left: 90%;
+     }
+   }
+   
+   .heart:nth-child(1) {  
+     animation-delay: 1s;
+   }
+   
+   .heart:nth-child(2) {
+     animation-delay: 2.5s;
+   }
+   
+   .heart:nth-child(3) {
+     animation-delay: 3.5s;
+   }
+   
+   .heart:nth-child(4) {
+     animation-delay: 4.5s;
+   }
