@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuth } from "../provider/AuthProvider.jsx";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 
 export default function Signup() {
     const [user, setUser] = useState("");
@@ -21,7 +21,7 @@ export default function Signup() {
                     <label className="sub-text">Email Address</label>
                     <input
                         className="input"
-                        placeholder="Enter your email address"
+                        placeholder="Enter your email"
                         type="text"
                         onChange={(e) => {
                             setUser(e.target.value);
@@ -30,7 +30,7 @@ export default function Signup() {
                     <label className="sub-text">Re-enter Email Address</label>
                     <input
                         className="input"
-                        placeholder="Enter your email address"
+                        placeholder="Re-enter your email"
                         type="text"
                         onChange={(e) => {
                             setUser(e.target.value);
@@ -45,6 +45,15 @@ export default function Signup() {
                         //     setUser(e.target.value);
                         // }}
                     />
+                    <label className="sub-text">Re-enter Password</label>
+                    <input
+                        className="input"
+                        placeholder="Re-enter your password"
+                        type="text"
+                        // onChange={(e) => {
+                        //     setUser(e.target.value);
+                        // }}
+                    />
                     <button
                         className="button"
                         type="submit"
@@ -53,7 +62,7 @@ export default function Signup() {
                         Log In
                     </button>
                     <p className="sub-caption url">
-                        <a href="Signup.jsx">Don’t have an account? Sign up</a>
+                        <Link to="/home">Already have an account? Log in.</Link>
                     </p>
                 </div>
             </section>
