@@ -50,14 +50,47 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <button onClick={() => navigate("/profile")}>
+                    <div className="middleSec">
+                        <div className="row-between">
+                            <h2 className="sub-title">Daily Quests</h2>
+                            <p className="time">24 hours</p>
+                        </div>
+                        <div className="quest-chart">
+                            <div className="quest">
+                                <div className="line"></div>
+                            </div>
+                            <div className="quest">
+                                <div className="line"></div>
+                            </div>
+                            <div className="no-border"></div>
+                        </div>
+                        <div className="row-between">
+                            <h2 className="sub-title">Monthly Quests</h2>
+                            <p className="time">24 hours</p>
+                        </div>
+                        <div className="quest-chart">
+                            <div className="quest">
+                                <div className="line"></div>
+                            </div>
+                            <div className="quest">
+                                <div className="line"></div>
+                            </div>
+                            <div className="no-border"></div>
+                        </div>
+                        <span className="nav-account"></span>
+                    </div>
+                    {/* <button onClick={() => navigate("/profile")}>
                         mascot stats
-                    </button>
-                </div>
-                <div className="navbar">
-                    <div className="row-container">
-                        <div className="test">test</div>
-                        <div className="test">test</div>
+                    </button> */}
+                    <div className="bottom-nav" id="bottomNav">
+                        <a
+                            onClick={() => navigate("/profile")}
+                            className="active"
+                        >
+                            Home
+                        </a>
+                        <a onClick={() => navigate("/profile")}>About</a>
+                        <a onClick={() => navigate("/profile")}>Contact</a>
                     </div>
                 </div>
             </section>

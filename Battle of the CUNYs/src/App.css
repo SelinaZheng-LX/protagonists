@@ -28,7 +28,7 @@ html {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 5px;
 }
 
 /* Track */
@@ -150,7 +150,6 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: var(--white);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,7 +224,7 @@ input {
 }
 /* Home css */
 .homeScreen {
-    height: 100vh;
+    overflow-y: scroll;
 }
 .col-container {
     display: flex;
@@ -334,4 +333,77 @@ input {
     width: 50vw;
     height: 1px;
     background: var(--white);
+}
+/* navbar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-nav a {
+    color: var(--dark-text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--h6);
+}
+
+.bottom-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.bottom-nav a.active {
+    background-color: var(--light-text);
+    color: var(--white);
+}
+/* middle section */
+.middleSec {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80vw;
+}
+.sub-title {
+    color: var(--dark-text);
+}
+.time {
+    color: var(--rank1);
+}
+.quest-chart {
+    width: 80vw;
+    height: 28vh;
+    border: 2px solid var(--light-text);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.quest .no-border {
+    border: 2px solid var(--white);
+}
+/* .line {
+    width: 100%;
+    height: 1px;
+    background: var(--light-text);
+} */
+.quest {
+    height: 9vh;
+    border-bottom: 1px solid var(--light-text);
+}
+/* accounting for nav bar */
+.nav-account {
+    height: 10vh;
+    background-color: var(--white);
 }
