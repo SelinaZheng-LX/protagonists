@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAuth } from "../provider/AuthProvider.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import { Link } from "react";
 export default function Login() {
     const [user, setUser] = useState("");
     const { login } = useAuth();
@@ -44,7 +44,9 @@ export default function Login() {
                         Log In
                     </button>
                     <p className="sub-caption url">
-                        <a href="/signup">Don’t have an account? Sign up</a>
+                        <Link onClick={() => navigate("/signup")}>
+                            Don’t have an account? Sign up
+                        </Link>
                     </p>
                 </div>
             </section>
