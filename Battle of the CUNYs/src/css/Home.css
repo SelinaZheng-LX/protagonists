@@ -128,12 +128,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: var(--h6);
-}
-
-.bottom-nav a:hover {
-    background-color: #ddd;
-    color: black;
+    /* font-size: var(--h6); */
 }
 
 .bottom-nav a.active {
@@ -175,9 +170,35 @@
 .quest {
     height: 9vh;
     border-bottom: 1px solid var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* accounting for nav bar */
 .nav-account {
     height: 10vh;
     background-color: var(--white);
+}
+.quest-names {
+    font-size: var(--h4);
+    color: var(--dark-text);
+    font-style: var(--second-font);
+}
+.nav-icon,
+.center-button {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.center-button {
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    padding: 15px;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
