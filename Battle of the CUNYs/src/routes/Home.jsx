@@ -25,7 +25,7 @@ export default function Home() {
                         </div>
 
                         <div className="col-start">
-                            <h1 className="h1">Welcome, {user.username}</h1>
+                            <h1 className="h1">Welcome, {user.name}</h1>
                             <button
                                 className="button"
                                 onClick={() => navigate("/mascot")}
@@ -104,9 +104,7 @@ export default function Home() {
                         <a href="#" className="nav-icon">
                             &#x1F4D8;
                         </a>
-                        <div className="center-button">
-                            <img src={mouse} alt="" className="food" />
-                        </div>
+                        <div className="center-button">&#x2713;</div>
                         <a href="#" className="nav-icon">
                             &#x1F4B8;
                         </a>

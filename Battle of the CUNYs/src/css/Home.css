@@ -173,6 +173,9 @@
 
 .quest {
     border-bottom: 1px solid var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* accounting for nav bar */
 .nav-account {

@@ -6,7 +6,8 @@ export default function Authentication({ children }) {
     const { user } = useAuth();
     const location = useLocation();
 
-    if (!user.username) {
+    console.log(user);
+    if (!user.name) {
         return <Navigate to="/" state={{ path: location.pathname }} />;
     }
 
