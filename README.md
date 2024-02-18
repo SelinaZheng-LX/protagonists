@@ -1,7 +1,7 @@
 # Welcome to Team Protagonist's Battle of the CUNYs
 Check out our wiki for more in-depth information
 ***
-About: A game for CUNY students to develop their soft skills and encourages the students to market themselves while aiding in career development. Improves the community between CUNY schools and shift the student culture from a commuter school mentality to a close-knit, connected community.
+About: A web-based game for CUNY students to develop their soft skills and encourages the students to market themselves while aiding in career development. Improves the community between CUNY schools and shift the student culture from a commuter school mentality to a close-knit, connected community.
 
 
 Built With: Vite.js, Supabase, Bcrypt, Blender
