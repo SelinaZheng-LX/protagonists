@@ -28,14 +28,7 @@ function App() {
                         </Authentication>
                     }
                 />
-                <Route
-                    path="mascot"
-                    element={
-                        <Authentication>
-                            <Mascot />
-                        </Authentication>
-                    }
-                />
+
             </Routes>
         </>
     );

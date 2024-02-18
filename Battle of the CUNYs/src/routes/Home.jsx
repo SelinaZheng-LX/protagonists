@@ -3,7 +3,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../provider/AuthProvider.jsx";
 import jjayImage from "../assets/jjay.png";
-import mouse from "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fmouse_3969773&psig=AOvVaw0QDvg_TG6DdGQDnvOTky3O&ust=1708314472971000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLjEgLz9s4QDFQAAAAAdAAAAABAE";
 export default function Home() {
     const { user } = useAuth();
     const navigate = useNavigate();
