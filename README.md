@@ -1,7 +1,7 @@
 # Welcome to Team Protagonist's Battle of the CUNYs
 Check out our wiki for more in-depth information
 ***
-About: A game for CUNY students to develop their soft skills and encourages the students to market themselves while aiding in career development. Improves the community between CUNY schools and shift the student culture from a commuter school mentality to a close-knit, connected community.
+About: A web-based game for CUNY students to develop their soft skills and encourages the students to market themselves while aiding in career development. Improves the community between CUNY schools and shift the student culture from a commuter school mentality to a close-knit, connected community.
 
 
 Built With: Vite.js, Supabase, Bcrypt, Blender
@@ -21,8 +21,6 @@ yarn install
 # npm
 npm install
 
-# pnpm
-pnpm install --shamefully-hoist
 ```
 ## Change Directory
 ```bash
@@ -79,10 +77,10 @@ Development Team :
 
 Selina Zheng (Lead Frontend Developer, Lead UI/UX Designer),
 
-Daraus Zhang (Lead Backend Developer),
+Daraus Zhang (Lead Backend Developer, Frontend Developer),
 
-Donaye Solo (Lead Music Composer, Lead 3D Character Designer)
+Donaye Solo (Audio Engineer, 3D Character Designer)
 
-Louis Cubero (Lead Augmented Reality Researcher, UI/UX Co-designer)
+Louis Cubero (Augmented Reality Researcher, UI/UX Co-designer)
 
 Web URL : tbd
