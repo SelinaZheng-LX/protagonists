@@ -1,29 +1,16 @@
-<html>
-  <head>
-    <head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "x-ua-compatible" content = "IE=edge">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
-    <script type="module" src="./src/main.js" defer></script>
-  </head>
-  <body>
-    <div id="header"> 
+import React from "react";
+
+export default function AR() {
+    return(
+        <>
+         <div id="header"> 
       <h1 id="caption"> Meet our Hunter Mascot! </h1>
     </div>
     <div id="scanning-overlays" class="hidden">
       <div>
         <model-viewer camera-controls alt="Model" src="./assets/2d/animals/hunter.glb"></model-viewer>
-       <!----   <img id="overlayImage" src="./assets/2d/animals/hunter.glb"/> -->
-       <!--<div class="scanline"></div>-->
       </div>
     </div>
-
     <div class="hearts">
       <div class="heart"></div>
       <div class="heart"></div>
@@ -47,5 +34,6 @@
       </a-assets>
       <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
     </a-scene>
-  </body>
-</html>
+        </>
+    )
+}
