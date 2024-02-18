@@ -21,8 +21,6 @@ yarn install
 # npm
 npm install
 
-# pnpm
-pnpm install --shamefully-hoist
 ```
 ## Change Directory
 ```bash
@@ -79,10 +77,10 @@ Development Team :
 
 Selina Zheng (Lead Frontend Developer, Lead UI/UX Designer),
 
-Daraus Zhang (Lead Backend Developer),
+Daraus Zhang (Lead Backend Developer, Frontend Developer),
 
-Donaye Solo (Lead Music Composer, Lead 3D Character Designer)
+Donaye Solo (Audio Engineer, 3D Character Designer)
 
-Louis Cubero (Lead Augmented Reality Researcher, UI/UX Co-designer)
+Louis Cubero (Augmented Reality Researcher, UI/UX Co-designer)
 
 Web URL : tbd
