@@ -3,6 +3,7 @@ import { useAuth } from "../provider/AuthProvider.jsx";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import bcrypt from "bcryptjs";
 import supabase from "../config/supabaseClient.js";
+import Logo from "../assets/Logos.png";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -51,6 +52,7 @@ export default function Login() {
   return (
     <>
       <section className="login">
+        <img className="battleLogo" src={Logo}></img>
         <div className="flex-container">
           <h1 className="title">Login Account</h1>
           <label className="sub-text">Login Account</label>
@@ -66,7 +68,7 @@ export default function Login() {
           <input
             className="input"
             placeholder="Enter your password"
-            type="text"
+            type="password"
             onChange={(e) => {
               setPassword(e.target.value);
             }}

@@ -8,13 +8,13 @@
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 .login {
     width: 60%;
-    height: 60%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,4 +77,11 @@ input {
 
 .button:hover {
     background-color: var(--secondary);
+}
+
+.battleLogo {
+    margin:0;
+    width:80%;
+    align-self: center;
+    margin-top: 30%;
 }

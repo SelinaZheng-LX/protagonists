@@ -79,7 +79,7 @@ export default function Signup() {
           <input
             className="input"
             placeholder="Enter your password"
-            type="text"
+            type="password"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
