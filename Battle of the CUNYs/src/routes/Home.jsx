@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../provider/AuthProvider.jsx";
 import jjayImage from "../assets/jjay.png";
+import mouse from "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fmouse_3969773&psig=AOvVaw0QDvg_TG6DdGQDnvOTky3O&ust=1708314472971000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLjEgLz9s4QDFQAAAAAdAAAAABAE";
 export default function Home() {
     const { user } = useAuth();
     const navigate = useNavigate();
@@ -57,19 +58,39 @@ export default function Home() {
                         </div>
                         <div className="quest-chart">
                             <div className="quest">
-                                <h3 className="quest-names">Daily sign-in</h3>
+                                <h3 className="quest-names">Daily Sign In</h3>
                             </div>
-                            <div className="quest"></div>
-                            <div className="no-border"></div>
+                            <div className="quest">
+                                <h3 className="quest-names">
+                                    Read your emails
+                                </h3>
+                            </div>
+                            <div className="no-border">
+                                <h3 className="quest-names">
+                                    Study for 30 minutes
+                                </h3>
+                            </div>
                         </div>
                         <div className="row-between">
                             <h2 className="sub-title">Monthly Quests</h2>
                             <p className="time">24 hours</p>
                         </div>
                         <div className="quest-chart">
-                            <div className="quest"></div>
-                            <div className="quest"></div>
-                            <div className="no-border"></div>
+                            <div className="quest">
+                                <h3 className="quest-names">
+                                    Apply to an internship
+                                </h3>
+                            </div>
+                            <div className="quest">
+                                <h3 className="quest-names">
+                                    Update your resume
+                                </h3>
+                            </div>
+                            <div className="no-border">
+                                <h3 className="quest-names">
+                                    Go to a networking event
+                                </h3>
+                            </div>
                         </div>
                         <span className="nav-account"></span>
                     </div>
@@ -83,7 +104,9 @@ export default function Home() {
                         <a href="#" className="nav-icon">
                             &#x1F4D8;
                         </a>
-                        <div className="center-button">&#x2713;</div>
+                        <div className="center-button">
+                            <img src={mouse} alt="" className="food" />
+                        </div>
                         <a href="#" className="nav-icon">
                             &#x1F4B8;
                         </a>
