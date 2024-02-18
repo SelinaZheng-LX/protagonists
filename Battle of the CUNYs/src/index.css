@@ -13,6 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (min-width: 700px) {
+  :root {
+    height: 100vh;
+    width: 40vh;
+    align-self: center;
+    margin-left:40%;
+  }
+}
+
 a {
   font-weight: 500;
   color: #646cff;

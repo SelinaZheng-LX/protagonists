@@ -126,7 +126,7 @@ export default function Home() {
                                 </h3>
                             </div>
                             <div className="no-border">
-                                <img src={person} alt="" className="icon" />
+                                <img src={person} alt="" className="small-icon"/>
                                 <h3 className="quest-names">
                                     Go to a networking event
                                 </h3>
@@ -139,7 +139,7 @@ export default function Home() {
                     </button> */}
                     <div className="bottom-nav" id="bottomNav">
                         <a href="#">
-                            <img src={person} alt="" className="icon" />
+                            <img src={person} alt="" className="small-icon" />
                         </a>
                         <a href="#">
                             <img src={mail} alt="" className="icon" />
