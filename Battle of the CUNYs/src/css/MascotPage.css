@@ -77,14 +77,13 @@
     align-items: center;
 }
 .food-info {
-    position: absolute;
+    align-self: center;
     width: 60vw;
     height: 3rem;
     background-color: var(--tertiary);
     border-radius: 5px;
 }
 .round-food-info {
-    position: relative;
     right: 30%;
     width: 40vw;
     height: 3rem;

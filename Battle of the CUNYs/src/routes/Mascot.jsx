@@ -1,12 +1,44 @@
 //See mascot in AR moving around
-import React from "react";
+import React, {useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../provider/AuthProvider.jsx";
 import jjayImage from "../assets/jjay.png";
 import mouse from "../assets/mouse.png";
+import supabase from "../config/supabaseClient.js";
+
 export default function Mascot() {
   const { user } = useAuth();
   const navigate = useNavigate();
+
+  const feedMascot = (e) => {
+    e.preventDefault();
+    if (user.foodAmount > 0) {
+      user.foodFed += 1;
+      user.foodAmount -=1;
+    }
+    console.log(user.foodAmount)
+  }
+
+  useEffect(() => {
+    const updatePlayer = async () => {
+      const { data, error } = await supabase
+        .from('Player')
+        .update({ foodAmount: user.foodAmount, foodFed: user.foodFed})
+        .eq('email', user.email)
+        .single()
+
+      if (error) {
+        console.log(error);
+      }
+      if (data) {
+        console.log("heres your reward")
+        console.log(user.foodFed)
+      }
+    }
+    
+    updatePlayer();
+  }, [user.foodFed, user.foodAmount])
+
   return (
     <>
       <section className="mascotScreen">
@@ -41,17 +73,10 @@ export default function Mascot() {
             </div>
           </div>
           <div className="feed-mascot margin-top">
-            <span className="food-info">
-              <div className="row-con">
-                <img src={mouse} alt="" className="food" />
-                <h3 className="num">88</h3>
-              </div>
-            </span>
-            <span className="round-food-info">Feed the Mascot</span>
+            <span className="round-food-info" onClick={feedMascot}>Feed the Mascot</span>
           </div>
           <div className="feed-mascot">
-            <span className="food-info"></span>
-            <span className="round-food-info">Earn Hawk Foods</span>
+            <span className="round-food-info" onClick={() => navigate("/home")}>Earn Hawk Foods</span>
           </div>
           <button
             className="round-button margin-top"

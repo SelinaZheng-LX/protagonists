@@ -15,7 +15,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const fetchPlayer = async () => {
+    const updatePlayer = async () => {
       const { data, error } = await supabase
         .from('Player')
         .update({ foodAmount:user.foodAmount})
@@ -26,12 +26,12 @@ export default function Home() {
         console.log(error);
       }
       if (data) {
-        console.log("heres your reward")
+        console.log("he liked it!")
         console.log(user.foodAmount)
       }
     }
 
-    fetchPlayer();
+    updatePlayer();
   }, [user.foodAmount])
 
   return (
