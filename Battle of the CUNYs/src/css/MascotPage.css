@@ -29,7 +29,7 @@
     filter: drop-shadow(0 0 0.75rem var(--primary));
 }
 #xpProgress {
-    width: 90%;
+    width: 70%;
     background-color: var(--quaternary);
     border-radius: 10px;
     bottom: 9.5vh;
@@ -40,11 +40,57 @@
     /* background-color: var(--quaternary); */
     border-radius: 10px;
     width: 30%;
-    height: 1rem;
+    height: 0.6rem;
     display: block;
 }
 .line {
     width: 70vw;
     height: 1px;
     background: var(--secondary);
+}
+.food {
+    width: 3rem;
+    margin-right: 0.1rem;
+}
+.row-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+}
+.row-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num {
+    font-family: var(--body-font);
+    color: var(--dark-text);
+    font-size: var(--h4);
+}
+.feed-mascot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-info {
+    position: absolute;
+    width: 60vw;
+    height: 3rem;
+    background-color: var(--tertiary);
+    border-radius: 5px;
+}
+.round-food-info {
+    position: relative;
+    right: 30%;
+    width: 40vw;
+    height: 3rem;
+    font-size: var(--h7);
+    font-weight: var(--fw-bold);
+    border-radius: 20px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shaded-text);
 }

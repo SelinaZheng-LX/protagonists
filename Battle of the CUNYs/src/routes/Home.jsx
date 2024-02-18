@@ -56,12 +56,8 @@ export default function Home() {
                             <p className="time">24 hours</p>
                         </div>
                         <div className="quest-chart">
-                            <div className="quest">
-                                <div className="line"></div>
-                            </div>
-                            <div className="quest">
-                                <div className="line"></div>
-                            </div>
+                            <div className="quest"></div>
+                            <div className="quest"></div>
                             <div className="no-border"></div>
                         </div>
                         <div className="row-between">
@@ -69,12 +65,8 @@ export default function Home() {
                             <p className="time">24 hours</p>
                         </div>
                         <div className="quest-chart">
-                            <div className="quest">
-                                <div className="line"></div>
-                            </div>
-                            <div className="quest">
-                                <div className="line"></div>
-                            </div>
+                            <div className="quest"></div>
+                            <div className="quest"></div>
                             <div className="no-border"></div>
                         </div>
                         <span className="nav-account"></span>
