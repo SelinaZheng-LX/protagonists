@@ -1,5 +1,5 @@
 //See mascot in AR moving around
-import React, {useEffect} from "react";
+import React, { useState, useEffect, useReducer }  from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../provider/AuthProvider.jsx";
 import jjayImage from "../assets/jjay.png";
@@ -7,8 +7,10 @@ import mouse from "../assets/mouse.png";
 import supabase from "../config/supabaseClient.js";
 
 export default function Mascot() {
+  const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
   const { user } = useAuth();
   const navigate = useNavigate();
+  const [reload, setReload] = useState("false");
 
   const feedMascot = (e) => {
     e.preventDefault();
@@ -17,6 +19,7 @@ export default function Mascot() {
       user.foodAmount -=1;
     }
     console.log(user.foodAmount)
+    forceUpdate();
   }
 
   useEffect(() => {
