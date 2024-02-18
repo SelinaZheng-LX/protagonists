@@ -1,7 +1,7 @@
 # Welcome to Team Protagonist's Battle of the CUNYs
-Check out our wiki for more in-depth information
+
 ***
-About: A web-based game for CUNY students to develop their soft skills and encourages the students to market themselves while aiding in career development. Improves the community between CUNY schools and shift the student culture from a commuter school mentality to a close-knit, connected community.
+About: A web-based game for CUNY students to develop their soft skills and encourage students to market themselves while aiding in career development. Improves the sense of community between CUNY schools and shift the student culture from a commuter school mentality to a close-knit, connected network of students. Students are motivated by daily and weekly tasks that allow them to feed their school mascots. At the end of a semester or year, a major battle will ensue, and the CUNY with the strongest spirit wins!
 
 
 Built With: Vite.js, Supabase, Bcrypt, Blender
@@ -28,7 +28,7 @@ cd Battle of the CUNYs
 ```
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the development server on http://localhost:5173
 
 ```bash
 npm run dev
@@ -53,9 +53,9 @@ npm run preview
 ## Roadblocks Overcame
 
 - Pull Requests from different branches
-- Shift from PostgresSQL to Supabase
+- Shift from databases on local machines to Supabase
 - Shift from 8th Wall Augmented Reality to Adobe Aero
-- Time crunch to design (from scratch) mascot and shape on Blender.
+- Time crunch to design (from scratch) mascot and shape on Blender
 
 ***
 
