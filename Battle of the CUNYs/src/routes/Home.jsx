@@ -24,7 +24,7 @@ export default function Home() {
                         </div>
 
                         <div className="col-start">
-                            <h1 className="h1">Welcome, {user.username}</h1>
+                            <h1 className="h1">Welcome, {user.name}</h1>
                             <button
                                 className="button"
                                 onClick={() => navigate("/mascot")}
