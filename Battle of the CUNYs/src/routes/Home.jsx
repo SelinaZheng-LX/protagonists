@@ -95,13 +95,13 @@ export default function Home() {
                                 <img src={daily} alt="" className="icon" />
                                 <h3 className="quest-names">Daily Sign In</h3>
                             </div>
-                            <div className="quest">
+                            <div className="quest" onClick={getReward}>
                                 <img src={mail} alt="" className="icon" />
                                 <h3 className="quest-names">
                                     Read your emails
                                 </h3>
                             </div>
-                            <div className="no-border">
+                            <div className="no-border" onClick={getReward}>
                                 <img src={book} alt="" className="icon" />
                                 <h3 className="quest-names">
                                     Study for 30 minutes
@@ -113,20 +113,26 @@ export default function Home() {
                             <p className="time">24 hours</p>
                         </div>
                         <div className="quest-chart">
-                            <div className="quest">
+                            <div className="quest" onClick={getReward}>
                                 <img src={pen} alt="" className="icon" />
                                 <h3 className="quest-names">
                                     Apply to an internship
                                 </h3>
                             </div>
                             <div className="quest">
+                                onClick={getReward}
                                 <img src={paper} alt="" className="icon" />
                                 <h3 className="quest-names">
                                     Update your resume
                                 </h3>
                             </div>
                             <div className="no-border">
-                                <img src={person} alt="" className="small-icon"/>
+                                onClick={getReward}
+                                <img
+                                    src={person}
+                                    alt=""
+                                    className="small-icon"
+                                />
                                 <h3 className="quest-names">
                                     Go to a networking event
                                 </h3>

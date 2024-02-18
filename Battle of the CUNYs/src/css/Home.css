@@ -171,8 +171,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
 }
-
+.quest:active {
+    /* transform: scale(1.2); */
+    /* background-color: var(--light-text); */
+    animation: clickAnimation 1s ease;
+}
+@keyframes clickAnimation {
+    0% {
+        background-color: var(--white);
+    }
+    50% {
+        transform: var(--secondary);
+    }
+    100% {
+        transform: var(--white);
+    }
+}
 .quest {
     border-bottom: 1px solid var(--light-text);
     display: flex;
@@ -215,7 +233,7 @@
 }
 
 .small-icon {
-    height:2.5rem;
+    height: 2.5rem;
     width: 2rem;
     margin-right: 1rem;
 }
