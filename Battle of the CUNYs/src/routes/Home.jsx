@@ -56,7 +56,9 @@ export default function Home() {
                             <p className="time">24 hours</p>
                         </div>
                         <div className="quest-chart">
-                            <div className="quest"></div>
+                            <div className="quest">
+                                <h3 className="quest-names">Daily sign-in</h3>
+                            </div>
                             <div className="quest"></div>
                             <div className="no-border"></div>
                         </div>
@@ -75,6 +77,21 @@ export default function Home() {
                         mascot stats
                     </button> */}
                     <div className="bottom-nav" id="bottomNav">
+                        <a href="#" className="nav-icon">
+                            &#x1F3E0;
+                        </a>
+                        <a href="#" className="nav-icon">
+                            &#x1F4D8;
+                        </a>
+                        <div className="center-button">&#x2713;</div>
+                        <a href="#" className="nav-icon">
+                            &#x1F4B8;
+                        </a>
+                        <a href="#" className="nav-icon">
+                            &#x1F310;
+                        </a>
+                    </div>
+                    {/* <div className="bottom-nav" id="bottomNav">
                         <a
                             onClick={() => navigate("/profile")}
                             className="active"
@@ -83,7 +100,7 @@ export default function Home() {
                         </a>
                         <a onClick={() => navigate("/profile")}>About</a>
                         <a onClick={() => navigate("/profile")}>Contact</a>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>
