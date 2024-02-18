@@ -19,20 +19,20 @@ export default function Login() {
       .from('Player')
       .select()
       .eq('email', email)
+      .single()
 
     if (error) {
       console.log(error);
       setFormError("Invalid login. Please try again.");
     }
     if (data) {
-      const player = data[0];
-      const match = await bcrypt.compare(password, player.password);
+      const match = await bcrypt.compare(password, data.password);
       if (match) {
         setUser({
-          name: player.fName[0] + player.fName.slice(1),
-          email: player.email,
-          foodFed: player.foodFed,
-          foodAmount: player.foodAmount,
+          name: data.fName[0] + data.fName.slice(1),
+          email: data.email,
+          foodFed: data.foodFed,
+          foodAmount: data.foodAmount,
         })
         navigate("/home");
       }
