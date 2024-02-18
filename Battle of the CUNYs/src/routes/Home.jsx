@@ -138,18 +138,20 @@ export default function Home() {
                         mascot stats
                     </button> */}
                     <div className="bottom-nav" id="bottomNav">
-                        <a href="#" className="nav-icon">
-                            &#x1F3E0;
+                        <a href="#">
+                            <img src={person} alt="" className="icon" />
                         </a>
-                        <a href="#" className="nav-icon">
-                            &#x1F4D8;
+                        <a href="#">
+                            <img src={mail} alt="" className="icon" />
                         </a>
-                        <div className="center-button">&#x2713;</div>
-                        <a href="#" className="nav-icon">
-                            &#x1F4B8;
+                        <div className="center-button">
+                            <a onClick={() => navigate("/mascot")}>&#x2713;</a>
+                        </div>
+                        <a href="#">
+                            <img src={pen} alt="" className="icon" />
                         </a>
-                        <a href="#" className="nav-icon">
-                            &#x1F310;
+                        <a href="#">
+                            <img src={book} alt="" className="icon" />
                         </a>
                     </div>
                     {/* <div className="bottom-nav" id="bottomNav">
