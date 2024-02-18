@@ -18,6 +18,7 @@
 .h1 {
     color: var(--white);
     font-size: var(--h4);
+    margin-bottom: 1.5rem;
 }
 .h2 {
     font-family: var(--second-font);
@@ -120,6 +121,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .bottom-nav a {
@@ -127,6 +129,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    width: 5rem;
     /* font-size: var(--h6); */
 }
 
@@ -182,6 +185,7 @@
     background-color: var(--white);
 }
 .quest-names {
+    width: 60%;
     font-size: var(--h5);
     color: var(--dark-text);
     font-style: var(--body-font);
@@ -195,12 +199,17 @@
 }
 
 .center-button {
-    background-color: var(--primary-light);
+    background-color: var(--light-text);
     border-radius: 50%;
-    padding: 15px;
+    padding: 5px;
     width: 6rem;
     height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon {
+    width: 2.5rem;
+    margin-right: 1rem;
 }
