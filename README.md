@@ -60,12 +60,12 @@ Client: CUNY
 
 Development Team :
 
-Selina Zheng ( developer, UI/UX Designer),
+Selina Zheng (Lead Frontend Developer, Lead UI/UX Designer),
 
-Daraus Zhang (Backend Developer),
+Daraus Zhang (Lead Backend Developer),
 
-Donaye (Music, Character Designer)
+Donaye Solo (Lead Music Composer, Lead 3D Character Designer)
 
-Louis (Augmented Reality Researcher, UI/UX Co-designer)
+Louis Cubero (Lead Augmented Reality Researcher, UI/UX Co-designer)
 
 Web URL : tbd
