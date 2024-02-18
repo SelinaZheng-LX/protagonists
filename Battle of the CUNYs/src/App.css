@@ -1,3 +1,6 @@
+@import url(./css/Login.css);
+@import url(./css/Home.css);
+@import url(./css/MascotPage.css);
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Monda:wght@400;700&display=swap");
 html {
     box-sizing: border-box;
@@ -28,7 +31,7 @@ html {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 5px;
 }
 
 /* Track */
@@ -65,6 +68,7 @@ body {
 
     /* colors */
     --primary: rgba(2, 35, 211, 1);
+    --primary-light: rgba(48, 69, 180, 1);
     --secondary: rgba(107, 160, 245, 1);
     --tertiary: rgba(212, 233, 239, 1);
     --quaternary: rgba(80, 222, 253, 1);
@@ -78,11 +82,6 @@ body {
     --alt-linear: #7926ff;
     --info-select: #ffb6c1;
     --login-shadow: rgba(0, 0, 0, 0.25);
-    --search-hover: rgb(112, 53, 53);
-    --search-dark: rgb(29, 29, 29);
-    --search-text: rgb(219, 219, 219);
-    --search-bg: rgb(68, 68, 68);
-    --bg-rank: #87000b;
     --rank1: rgb(255, 183, 0);
     --rank2: rgb(0, 195, 255);
     --rank3: #04ff9f;
@@ -107,26 +106,6 @@ body {
     --smallText: 0.8rem;
 }
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
-
 @keyframes logo-spin {
     from {
         transform: rotate(0deg);
@@ -140,85 +119,4 @@ body {
     a:nth-of-type(2) .logo {
         animation: logo-spin infinite 20s linear;
     }
-}
-
-/* login page */
-#root {
-    height: 100vh;
-    width: 100vw;
-    width: 100%;
-    margin: 0 auto;
-    background-color: var(--white);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.login {
-    width: 60%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-    text-align: center;
-}
-.flex-container {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.title {
-    font-family: var(--body-font);
-    color: var(--primary);
-}
-.sub-text {
-    font-family: var(--body-font);
-    color: var(--dark-text);
-}
-.url {
-    color: var(--primary);
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: var(--light-text);
-}
-
-input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid var(--primary);
-    border-radius: 3px;
-    box-sizing: border-box;
-    background-color: var(--white);
-    color: var(--light-text);
-}
-
-.button {
-    background-color: var(--primary);
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: var(--secondary);
 }

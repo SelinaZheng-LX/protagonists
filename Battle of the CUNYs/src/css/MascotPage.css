@@ -1,0 +1,120 @@
+@import url(../App.css);
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Monda:wght@400;700&display=swap");
+.mascotScreen {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--body-font);
+    background-image: url("../assets/purple-bg.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.margin-top {
+    margin-top: 2rem;
+}
+.data-container {
+    background-color: var(--white);
+    width: 80vw;
+    height: 70vh;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.mascot-show {
+    width: 10rem;
+    z-index: 2;
+    bottom: 65vh;
+    position: fixed;
+    filter: drop-shadow(0 0 0.75rem var(--primary));
+}
+#xpProgress {
+    width: 70%;
+    background-color: var(--quaternary);
+    border-radius: 10px;
+    bottom: 9.5vh;
+}
+
+#xpBar {
+    background: linear-gradient(var(--quaternary), var(--alt-linear));
+    /* background-color: var(--quaternary); */
+    border-radius: 10px;
+    width: 30%;
+    height: 0.6rem;
+    display: block;
+}
+.line {
+    width: 70vw;
+    height: 1px;
+    background: rgba(217, 217, 217, 1);
+}
+.food {
+    width: 3rem;
+    margin-right: 0.1rem;
+}
+.row-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+}
+.row-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num {
+    font-family: var(--body-font);
+    color: var(--dark-text);
+    font-size: var(--h4);
+}
+.feed-mascot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-info {
+    position: absolute;
+    width: 60vw;
+    height: 3rem;
+    background-color: var(--tertiary);
+    border-radius: 5px;
+}
+.round-food-info {
+    position: relative;
+    right: 30%;
+    width: 40vw;
+    height: 3rem;
+    font-size: var(--h7);
+    font-weight: var(--fw-bold);
+    border-radius: 20px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shaded-text);
+}
+.round-button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary);
+    color: #fff;
+    border: 2px solid var(--dark-text);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(66, 66, 66, 0.5); /* Inverted shadow */
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: var(--white);
+}
