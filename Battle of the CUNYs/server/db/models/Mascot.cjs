@@ -1,4 +1,4 @@
-const db = require("db");
+const db = require("../db.cjs");
 const { STRING, INTEGER } = require("sequelize");
 
 const Mascot = db.define("Mascot", {

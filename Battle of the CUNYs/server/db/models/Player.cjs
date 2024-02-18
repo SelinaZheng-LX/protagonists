@@ -1,4 +1,4 @@
-const db = require("db");
+const db = require("../db.cjs");
 const { STRING, INTEGER } = require("sequelize");
 
 const Player = db.define("Player", {
@@ -16,18 +16,18 @@ const Player = db.define("Player", {
   },
   firstName: {
     type: STRING,
-    allowEmpty: false,
-    allowNull: false
+    // allowEmpty: false,
+    // allowNull: false
   },
   lastName: {
     type: STRING,
-    allowEmpty: false,
-    allowNull: false
+    // allowEmpty: false,
+    // allowNull: false
   },
   school: {
     type: STRING,
-    allowEmpty: false,
-    allowNull: false
+    // allowEmpty: false,
+    // allowNull: false
   },
   fedAmount: {
     type: INTEGER,
