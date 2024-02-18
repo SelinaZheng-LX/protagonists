@@ -1,6 +1,13 @@
 # Welcome to Team Protagonist's Battle of the CUNYs
 Check out our wiki for more in-depth information
 ***
+About: A game for CUNY students to develop their soft skills and encourages the students to market themselves while aiding in career development. 
+
+Built With: Vite.js, Supabase, Bcrypt, Blender
+
+Framework: ReactJS
+
+***
 
 ## Setup
 
@@ -41,6 +48,15 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
+
+***
+
+## Roadblocks Overcame
+
+- Pull Requests from different branches
+- Shift from PostgresSQL to Supabase
+- Shift from 8th Wall Augmented Reality to Adobe Aero
+- Time crunch to design (from scratch) mascot and shape on Blender.
 
 ***
 
