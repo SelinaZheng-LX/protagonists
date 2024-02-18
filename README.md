@@ -1,5 +1,5 @@
 # Welcome to Team Protagonist's Battle of the CUNYs
-Check out our wiki for more in-depth information
+
 ***
 About: A web-based game for CUNY students to develop their soft skills and encourage students to market themselves while aiding in career development. Improves the sense of community between CUNY schools and shift the student culture from a commuter school mentality to a close-knit, connected network of students. Students are motivated by daily and weekly tasks that allow them to feed their school mascots. At the end of a semester or year, a major battle will ensue, and the CUNY with the strongest spirit wins!
 
