@@ -9,7 +9,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [formError, setFormError] = useState("");
-  const { user, setUser } = useAuth();
+  const { user, setUser, setMascot } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const redirectPath = location.state?.path || "home";
@@ -34,7 +34,18 @@ export default function Login() {
           email: data.email,
           foodFed: data.foodFed,
           foodAmount: data.foodAmount,
+          school: data.school,
         })
+        const { data: info, error } = await supabase
+          .from('Mascot')
+          .select()
+          .eq('school', data.school)
+          .single()
+        if (info) {
+          setMascot({
+            foodEaten: info.foodEaten,
+          })
+        }
         navigate("/home");
       }
       else {

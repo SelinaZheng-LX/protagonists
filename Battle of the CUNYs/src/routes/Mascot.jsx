@@ -1,5 +1,5 @@
 //See mascot in AR moving around
-import React, { useState, useEffect, useReducer }  from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../provider/AuthProvider.jsx";
 import jjayImage from "../assets/jjay.png";
@@ -8,7 +8,7 @@ import supabase from "../config/supabaseClient.js";
 
 export default function Mascot() {
   const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
-  const { user } = useAuth();
+  const { user, mascot } = useAuth();
   const navigate = useNavigate();
   const [reload, setReload] = useState("false");
 
@@ -16,9 +16,9 @@ export default function Mascot() {
     e.preventDefault();
     if (user.foodAmount > 0) {
       user.foodFed += 1;
-      user.foodAmount -=1;
+      user.foodAmount -= 1;
+      mascot.foodEaten += 1;
     }
-    console.log(user.foodAmount)
     forceUpdate();
   }
 
@@ -26,7 +26,7 @@ export default function Mascot() {
     const updatePlayer = async () => {
       const { data, error } = await supabase
         .from('Player')
-        .update({ foodAmount: user.foodAmount, foodFed: user.foodFed})
+        .update({ foodAmount: user.foodAmount, foodFed: user.foodFed })
         .eq('email', user.email)
         .single()
 
@@ -34,11 +34,19 @@ export default function Mascot() {
         console.log(error);
       }
       if (data) {
-        console.log("heres your reward")
-        console.log(user.foodFed)
       }
     }
-    
+
+    const updateMascot = async () => {
+
+      const { data, error } = await supabase
+        .from('Mascot')
+        .update({ foodEaten: mascot.foodEaten})
+        .eq('school', user.school)
+        .single()
+
+    }
+    updateMascot();
     updatePlayer();
   }, [user.foodFed, user.foodAmount])
 
@@ -56,7 +64,7 @@ export default function Mascot() {
           <div id="xpProgress">
             <div id="xpBar"></div>
           </div>
-          <p className="sub-text">1000/10000</p>
+          <p className="sub-text">{mascot.foodEaten}/10000</p>
           <p className="sub-text">695 Park Ave, New York, NY 10065</p>
           <div className="line"></div>
           <div className="row-around ">

@@ -12,7 +12,12 @@ export const AuthProvider = ({ children }) => {
     email: "",
     foodFed: 0,
     foodAmount: 0,
+    school: ""
   });
+  const [mascot, setMascot] = useState({
+    foodEaten: 0,
+
+  })
   const [logIn, setLogIn] = useState(null);
   const [signUp, setSignup] = useState(null);
   const login = (user) => {
@@ -28,7 +33,7 @@ export const AuthProvider = ({ children }) => {
   }
 
   return (
-    <AuthContext.Provider value={{ user, setUser, login, signup, logout }}>
+    <AuthContext.Provider value={{ user, setUser, mascot, setMascot, login, signup, logout }}>
       {children}
     </AuthContext.Provider>
   );
