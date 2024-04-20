@@ -8,6 +8,8 @@ Built With: Vite.js, Supabase, Bcrypt, Blender
 
 Framework: ReactJS
 
+Video Demo: https://youtu.be/-as8p4ouGjw
+
 ***
 
 ## Setup
